@@ -1,0 +1,215 @@
+.body__color {
+    background: rgb(7, 7, 7) url(./img/kosmicheskoe-nebo.jpg);
+    background-size: cover;
+}
+
+.planets {
+    border: rgb(255, 251, 251) solid 1px;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 8rem;
+    position: relative;
+    top: 6rem;
+    left: 6rem;
+    animation: planets 8s linear infinite;
+}
+
+.san {
+    background-color: orange;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 4rem;
+    position: absolute;
+    top: 3.7rem;
+    left: 3.5rem;
+    background:  url(./img/sun.png) no-repeat;
+    background-size: cover;
+    animation: earth 8s linear infinite;
+}
+
+.my__planet {
+    border: rgb(250, 247, 247) solid 1px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    position: relative;
+    top: -20px;
+    animation: earth 8s linear infinite;
+}
+
+.earth {
+    background-color: chartreuse;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: earth 8s linear infinite;
+    margin: 0;
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    background-image: url(./img/earthme.png);
+    background-repeat: no-repeat;
+    background-position: -5px 0;
+    background-size: cover;
+}
+
+.moon {
+    background-color: rgb(202, 202, 202);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 8rem;
+    animation-name: moon;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 10px;
+}
+
+.stars {
+    background-color: white;
+    border-radius: 50%;
+    animation-name: stars;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 6rem;
+}
+
+.stars1 {
+    background-color: white;
+    border-radius: 50%;
+    animation-name: stars;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 2rem;
+    left: 50rem;
+    
+}
+
+.stars2 {
+    background-color: white;
+    border-radius: 50%;
+    animation-name: stars;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 26rem;
+    left: 12rem;
+    margin: 0;
+}
+
+.stars3 {
+    background-color: rgb(163, 158, 158);
+    border-radius: 50%;
+    animation-name: stars;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 47rem;
+    left: 64rem;
+}
+
+.stars4 {
+    background-color: rgb(236, 184, 184);
+    border-radius: 50%;
+    animation-name: stars;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+.stars5 {
+    background-color: rgb(219, 207, 207);
+    border-radius: 50%;
+    animation-name: stars;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 40rem;
+    top: 23rem;
+}
+
+@keyframes stars {
+    from {
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+
+    }
+
+    25% {
+        opacity: 20%;
+        width: 2px;
+        height: 2px;
+    }
+
+
+    50% {
+        opacity: 50%;
+        width: 5px;
+        height: 5px;
+    }
+
+    75% {
+        opacity: 50%;
+        width: 6px;
+        height: 6px;
+    }
+
+    to {
+        opacity: 1;
+        width: 9px;
+        height: 9px;
+    }
+}
+
+@keyframes my__planet {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes planets {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes san {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes earth {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
